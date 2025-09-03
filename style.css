@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+:root {
+    --cor-fundo: #111;
+    --cor-texto: #fff;
+    --cor-detalhe: #f0b400;
+    /* amarelo Red Bull */
+    --alto-contraste-fundo: #000;
+    --alto-contraste-texto: #ff0;
+
+    /* Cores Red Bull */
+    --redbull-vermelho: #d60000;
+    --redbull-azul: #004b87;
+}
+
+/* ===========================
+   Estilo Geral
+=========================== */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+a {
+    color: var(--cor-detalhe);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--redbull-vermelho);
+}
+
+/* ===========================
+   Cabeçalho / Navegação
+=========================== */
+.site-header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+}
+
+.nav-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--redbull-vermelho);
+}
+
+/* ===========================
+   Hero / Seção Inicial
+=========================== */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--redbull-azul) 0%, #1c1c1c 100%);
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--cor-texto);
+    margin-bottom: 1rem;
+}
+
+.hero-text .tagline {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-cta {
+    background-color: var(--redbull-vermelho);
+    color: #fff;
+    padding: .8rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-cta:hover {
+    background-color: #a30000;
+}
+
+.hero-figure img {
+    max-width: 500px;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+
+/* ===========================
+   Seções
+=========================== */
+.section {
+    margin-bottom: 3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    color: var(--redbull-azul);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section p,
+.section ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.section ul {
+    padding-left: 1.5rem;
+}
+
+/* ===========================
+   Galeria
+=========================== */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.grid-galeria img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.grid-galeria figcaption {
+    text-align: center;
+    font-size: .9rem;
+    margin-top: .3rem;
+}
+
+/* ===========================
+   Formulário
+=========================== */
+.formulario {
+    background: #1c1c1c;
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: .3rem;
+    font-weight: 600;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #222;
+    color: #fff;
+}
+
+.formulario button {
+    background-color: var(--redbull-vermelho);
+    color: #fff;
+    border: none;
+    padding: .8rem 1.5rem;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #a30000;
+}
+
+/* ===========================
+   Footer
+=========================== */
+.site-footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #111;
+    color: #aaa;
+    font-size: .9rem;
+}
+
+/* ===========================
+   Acessibilidade
+=========================== */
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transition: transform .3s;
+}
+
+.opcoes-acessibilidade {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.opcoes-acessibilidade.apresenta-lista {
+    display: flex;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--cor-detalhe);
+    background: #fff;
+    color: var(--cor-detalhe);
+    font-weight: 600;
+    transition: .3s;
+}
+
+.opcoes-acessibilidade button:hover {
+    background: var(--cor-detalhe);
+    color: #fff;
+}
+
+/* ===========================
+   Alto contraste
+=========================== */
+.alto-contraste {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste a {
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .btn-cta,
+.alto-contraste .formulario button {
+    background-color: var(--alto-contraste-texto);
+    color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste .formulario input,
+.alto-contraste .formulario textarea {
+    background-color: #000;
+    color: var(--alto-contraste-texto);
+    border-color: var(--alto-contraste-texto);
+}

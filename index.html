@@ -1,0 +1,113 @@
+<!--Luiz Felipe Marques
+2E
+20/08/2025-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Max Verstappen — Fórmula 1</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+  <!-- Menu de acessibilidade -->
+  <div class="menu-acessibilidade">
+    <button id="botao-acessibilidade" aria-expanded="false" title="Abrir opções de acessibilidade">acessibilidade</button>
+    <div id="opcoes-acessibilidade" class="opcoes-acessibilidade">
+      <button id="aumentar-fonte">A+</button>
+      <button id="diminuir-fonte">A-</button>
+      <button id="alterna-contraste">Alto Contraste</button>
+    </div>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="site-header">
+    <nav class="container nav-principal">
+      <div class="logo">
+        <img src="verstappen-logo.png" alt="Logo Max Verstappen" width="120" height="40" loading="lazy">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#biografia">Biografia</a></li>
+        <li><a href="#detalhes">Detalhes</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section id="inicio" class="hero container">
+      <div class="hero-text">
+        <h1>Max Verstappen — O Fenômeno da Fórmula 1</h1>
+        <p class="tagline">Velocidade, talento e conquistas em cada curva.</p>
+        <a href="#biografia" class="btn-cta">Conheça sua história</a>
+      </div>
+      <figure class="hero-figure">
+        <img src="max-verstappen.png" alt="Max Verstappen" loading="lazy">
+        <figcaption>Max Verstappen em ação na Fórmula 1</figcaption>
+      </figure>
+    </section>
+
+    <!-- Biografia -->
+    <section id="biografia" class="container section">
+      <h2>Biografia</h2>
+      <p>Max Emilian Verstappen, nascido em 30 de setembro de 1997 em Hasselt, Bélgica, é um piloto de Fórmula 1 da equipe Red Bull Racing...</p>
+      <p>Filho do ex-piloto de Fórmula 1 Jos Verstappen, Max iniciou sua carreira no karting com apenas 4 anos...</p>
+      <p>Estreou na Fórmula 1 em 2015, com 17 anos, tornando-se o mais jovem piloto da história a disputar um GP...</p>
+      <p>Desde então, Verstappen se destacou pela agressividade, consistência e capacidade de superar adversidades...</p>
+      <p>Em 2021, conquistou seu primeiro campeonato mundial, quebrando recordes e consolidando-se como referência na categoria...</p>
+    </section>
+
+    <!-- Detalhes Técnicos -->
+    <section id="detalhes" class="container section">
+      <h2>Detalhes de Carreira (Até o momento da produção do site)</h2>
+      <ul>
+        <li>Equipes: Toro Rosso (2015), Red Bull Racing (2016–atual)</li>
+        <li>Primeira vitória: GP da Espanha 2016 (17 anos)</li>
+        <li>Campeonatos Mundiais: 2021, 2022, 2023, 2024</li>
+        <li>Total de vitórias: 65</li>
+        <li>Pódios: 117</li>
+        <li>Poles: 44</li>
+        <li>Recordes: mais jovem a vencer um GP, mais jovem a liderar campeonato</li>
+      </ul>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="container section">
+      <h2>Galeria</h2>
+      <div class="grid-galeria">
+        <figure><img src="verstappen-podium.png" alt="Max no pódio"><figcaption>Max Verstappen celebrando vitória</figcaption></figure>
+        <figure><img src="verstappen-rb19.png" alt="Carro Red Bull"><figcaption>RB19 em ação</figcaption></figure>
+        <figure><img src="verstappen-boxes.png" alt="Equipe Red Bull"><figcaption>Equipe Red Bull Racing</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="container section">
+      <h2>Contato</h2>
+      <form class="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 — Max Verstappen | Produzido por Luiz Felipe Marques</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
