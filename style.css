@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
 
 :root {
-    --cor-fundo: #111;
+    --cor-fundo: #18edd1;
     --cor-texto: #fff;
     --cor-detalhe: #f0b400;
     /* amarelo Red Bull */
@@ -281,4 +281,5 @@ h2 {
     background-color: #000;
     color: var(--alto-contraste-texto);
     border-color: var(--alto-contraste-texto);
+
 }
