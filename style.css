@@ -353,3 +353,9 @@ h2 {
     background: var(--alto-contraste-texto);
     color: #000;
 }
+.centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
