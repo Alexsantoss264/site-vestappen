@@ -359,3 +359,20 @@ h2 {
     align-items: center;
     text-align: center;
 }
+.background-container {
+        background-image: url('verstappen.png'); /* Substitua pelo caminho da sua imagem */
+        background-size: cover; /* Ajusta a imagem para cobrir o contêiner */
+        background-position: center; /* Centraliza a imagem */
+        position: relative; /* Permite que o conteúdo fique por cima */
+        width: 100%;
+        min-height: 100vh; /* Faz o contêiner ocupar toda a altura da tela */
+    }
+ .content {
+        position: absolute; /* Permite posicionar o conteúdo sobre a imagem */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Centraliza o conteúdo */
+        color: white; /* Cor do texto para que seja visível */
+        text-align: center;
+        z-index: 1; /* Garante que o conteúdo fique por cima de outros elementos */
+    }
