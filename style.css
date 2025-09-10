@@ -3,10 +3,9 @@
 :root {
     --cor-fundo: #18edd1;
     --cor-texto: #fff;
-    --cor-detalhe: #f0b400;
-    /* amarelo Red Bull */
+    --cor-detalhe: #f0b400; /* amarelo no tema normal */
     --alto-contraste-fundo: #000;
-    --alto-contraste-texto: #ff0;
+    --alto-contraste-texto: #ff6600; /* laranja no alto contraste */
 
     /* Cores Red Bull */
     --redbull-vermelho: #d60000;
@@ -259,27 +258,98 @@ h2 {
 }
 
 /* ===========================
-   Alto contraste
+   Alto contraste (sem imagens)
 =========================== */
 .alto-contraste {
     background-color: var(--alto-contraste-fundo);
     color: var(--alto-contraste-texto);
 }
 
+/* Links */
 .alto-contraste a {
     color: var(--alto-contraste-texto);
 }
 
+.alto-contraste a:hover {
+    color: #fff;
+}
+
+/* Cabeçalho */
+.alto-contraste .site-header {
+    background: #000;
+}
+
+/* Hero */
+.alto-contraste .hero {
+    background: #000 !important;
+    border: 2px solid var(--alto-contraste-texto);
+}
+
+.alto-contraste .hero-text h1,
+.alto-contraste .hero-text .tagline {
+    color: var(--alto-contraste-texto);
+}
+
+/* Botões */
 .alto-contraste .btn-cta,
 .alto-contraste .formulario button {
     background-color: var(--alto-contraste-texto);
     color: var(--alto-contraste-fundo);
 }
 
+.alto-contraste .btn-cta:hover,
+.alto-contraste .formulario button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Seções */
+.alto-contraste h2 {
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .section {
+    border: 1px solid var(--alto-contraste-texto);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Legendas da galeria (não altera imagens) */
+.alto-contraste .grid-galeria figcaption {
+    color: var(--alto-contraste-texto);
+}
+
+/* Formulário */
+.alto-contraste .formulario {
+    background: #000;
+    border: 2px solid var(--alto-contraste-texto);
+}
+
+.alto-contraste .formulario label {
+    color: var(--alto-contraste-texto);
+}
+
 .alto-contraste .formulario input,
 .alto-contraste .formulario textarea {
     background-color: #000;
     color: var(--alto-contraste-texto);
-    border-color: var(--alto-contraste-texto);
+    border: 1px solid var(--alto-contraste-texto);
+}
 
+/* Footer */
+.alto-contraste .site-footer {
+    background: #000;
+    color: var(--alto-contraste-texto);
+}
+
+/* Botões acessibilidade */
+.alto-contraste .opcoes-acessibilidade button {
+    background: #000;
+    color: var(--alto-contraste-texto);
+    border: 1px solid var(--alto-contraste-texto);
+}
+
+.alto-contraste .opcoes-acessibilidade button:hover {
+    background: var(--alto-contraste-texto);
+    color: #000;
 }
